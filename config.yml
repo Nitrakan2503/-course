@@ -1,0 +1,16 @@
+title: บอทบินกลุ่มไลน์
+description: บอทบินกลุีมไลน์วามารถลบออกได้รวดเร็วกว่าเราลบเองปกติ
+template:
+  repo: '-template'
+  name: ''
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
